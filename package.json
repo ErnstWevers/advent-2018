@@ -1,0 +1,16 @@
+{
+  "name": "adofco-2018",
+  "version": "1.0.0",
+  "description": "Advent of Code 2018",
+  "main": "index.js",
+  "author": "ernstwevers@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^1.15.3"
+  }
+}
