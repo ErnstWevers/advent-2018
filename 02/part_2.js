@@ -1,7 +1,7 @@
 const fs = require('fs');
 const stream = require('stream');
 
-const readStream = fs.createReadStream('./input/input.txt');
+const readStream = fs.createReadStream('./input.txt');
 const handleStream = new stream.Transform();
 const boxList = [];
 
@@ -35,7 +35,7 @@ readStream.pipe(handleStream).on('finish', () => {
     for (let j = i + 1; j < boxList.length; j++) {
       if (compareBoxes(boxList[i], boxList[j])) {
         console.log(
-          `the common letters is the IDs are: ${subtractBoxes(
+          `the common letters in the IDs are: ${subtractBoxes(
             boxList[i],
             boxList[j]
           )}`

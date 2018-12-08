@@ -1,7 +1,7 @@
 const fs = require('fs');
 const stream = require('stream');
 
-const readStream = fs.createReadStream('./input/input.txt');
+const readStream = fs.createReadStream('./input.txt');
 const handleStream = new stream.Transform();
 const getFreq = new stream.Transform();
 let twos = 0;
