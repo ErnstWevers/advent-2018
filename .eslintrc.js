@@ -36,6 +36,7 @@ module.exports = {
     ],
     'no-console': 0,
     'no-plusplus': 0,
+    'no-fallthrough': 0,
     'no-multiple-empty-lines': [
       'error',
       {

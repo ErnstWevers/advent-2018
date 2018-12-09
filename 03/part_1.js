@@ -1,9 +1,9 @@
 const fs = require('fs');
-const stream = require('stream');
+const Stream = require('stream');
 
 const readStream = fs.createReadStream('./input.txt');
-const handleStream = new stream.Transform();
-const addRecord = new stream.Transform();
+const handleStream = new Stream.Transform();
+const addRecord = new Stream.Transform();
 const claims = new Map();
 const doubles = new Map();
 

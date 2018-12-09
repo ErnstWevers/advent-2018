@@ -1,9 +1,9 @@
 const fs = require('fs');
-const stream = require('stream');
+const Stream = require('stream');
 
 const readStream = fs.createReadStream('./input.txt');
-const handleStream = new stream.Transform();
-const getFreq = new stream.Transform();
+const handleStream = new Stream.Transform();
+const getFreq = new Stream.Transform();
 let twos = 0;
 let threes = 0;
 
