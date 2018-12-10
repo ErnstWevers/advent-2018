@@ -23,15 +23,13 @@ handleStream._transform = (chunk, encoding, done) => {
 
 foldStream._transform = (chunk, encoding, done) => {
   const newChar = chunk.toString();
-  if (!(newChar.toLowerCase() === 'p')) {
-    if (!lastChar) {
-      lastChar = newChar;
-    } else if (checkFold(newChar, lastChar)) {
-      lastChar = stack.pop();
-    } else {
-      stack.push(lastChar);
-      lastChar = newChar;
-    }
+  if (!lastChar) {
+    lastChar = newChar;
+  } else if (checkFold(newChar, lastChar)) {
+    lastChar = stack.pop();
+  } else {
+    stack.push(lastChar);
+    lastChar = newChar;
   }
   done();
 };
